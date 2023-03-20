@@ -31,6 +31,7 @@ module.exports = {
       desktopFullHD: '1920px'
     },
     colors: {
+      white: '#FFFF',
       main: {
         primary: '#61C7B5',
         default: '#3A3A3C',
