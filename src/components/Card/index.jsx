@@ -84,7 +84,7 @@ const Card = ({ data }) => {
 
         {/* btn section */}
         <div className="flex justify-end">
-          <button className="font-semibold text-main-darker outline-none" onClick={revealText}>
+          <button className="font-semibold text-main-darker hover:text-main-blue outline-none" onClick={revealText}>
             See description
           </button>
         </div>
