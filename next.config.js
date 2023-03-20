@@ -8,6 +8,7 @@ module.exports = {
   basePath: '',
   images: {
     minimumCacheTTL: 60,
+    domains: ['images.prismic.io']
   },
   reactStrictMode: true
 };
