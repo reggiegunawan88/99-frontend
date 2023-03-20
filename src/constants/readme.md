@@ -1,0 +1,1 @@
+Constants folder for fixed-value constants data.
