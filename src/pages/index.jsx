@@ -1,5 +1,3 @@
-import 'keen-slider/keen-slider.min.css';
-
 import Card from '@/components/Card';
 import useHome from '@/hooks/pages/useHome';
 import HomeLayout from '@/layouts/HomeLayout';
