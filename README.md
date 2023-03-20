@@ -18,5 +18,8 @@ https://99-frontend.vercel.app/
 <p float="left">
 <img src="https://user-images.githubusercontent.com/44907916/226412521-e4772c11-2749-4f90-ab4b-5303e6eba983.png"/>
 <img src="https://user-images.githubusercontent.com/44907916/226412600-635abd84-6e6b-4cfd-8815-cb83f5f6f634.png"/>
-<img src="https://user-images.githubusercontent.com/44907916/226412868-86ebd20f-0187-4460-bc2b-92324508108a.png" />
+</p>
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/44907916/226412868-86ebd20f-0187-4460-bc2b-92324508108a.png" />  
 </p>
