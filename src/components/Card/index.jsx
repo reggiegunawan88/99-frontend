@@ -12,7 +12,7 @@ const Card = ({ data }) => {
     <div className="flex flex-col w-[544px] bg-main-grey rounded-md shadow-md">
       {/* img section */}
       <div className="inline-flex relative">
-        <div className=" pointer-events-none">
+        <div className="overflow-hidden rounded-t-md">
           <Image
             alt="building-img"
             src={data?.img_url || ''}
