@@ -200,7 +200,5 @@ module.exports = {
       90: '0.9',
       100: '1'
     }
-  },
-  // eslint-disable-next-line global-require
-  plugins: [require('@tailwindcss/line-clamp')]
+  }
 };
