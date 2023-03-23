@@ -3,11 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 
 import CardSkeleton from '@/components/SkeletonLoader/CardSkeleton';
-import formatPhoneNumber from '@/helpers/formatter/formatPhoneNumber';
 import useCard from '@/hooks/components/useCard';
 
 const Card = ({ data }) => {
-  const { showText, showPhoneNumber, toggleRevealPhoneNumber, revealText } = useCard();
+  const { showText, toggleRevealPhoneNumber, revealText, formatDescriptionText } = useCard(data);
   return (
     <div className="flex flex-col w-[544px] bg-main-grey rounded-md shadow-md">
       {/* img section */}
@@ -68,14 +67,10 @@ const Card = ({ data }) => {
               <span>{data?.availabilities_label}</span>
             </div>
             <div className="flex flex-col gap-y-2">
-              <span>{data?.description}</span>
-              <span>
-                Please call the owner{' '}
-                <span className="cursor-pointer" onClick={toggleRevealPhoneNumber}>
-                  ({showPhoneNumber ? data?.phone_number : formatPhoneNumber(data?.phone_number)})
-                </span>{' '}
-                to arrange for a viewing.
-              </span>
+              <span
+                dangerouslySetInnerHTML={{ __html: formatDescriptionText() }}
+                onClick={toggleRevealPhoneNumber}
+              ></span>
             </div>
           </>
         ) : (
