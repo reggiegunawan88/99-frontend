@@ -13,13 +13,16 @@ const useCard = data => {
   };
 
   const formatDescriptionText = () => {
+    // regex to replace existing whitespace between number
     const description = data?.description.replace(/(\d)\s+(?=\d)/g, `$1`);
     if (showPhoneNumber) {
       return description;
     }
+
+    // replace all matched phone number with new DOM element with the converted last 4 digits text into -XXXX
     const result = description.replace(
       /[6|8|9]\d{7}/g,
-      matched => `<span>${matched.replace(/.{0,4}$/, '')}XXXX<span/>` // replace all matched SG phone num format
+      matched => `<span>${matched.replace(/.{0,4}$/, '')}XXXX<span/>`
     );
     return result;
   };
