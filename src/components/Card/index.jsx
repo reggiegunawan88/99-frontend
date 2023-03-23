@@ -67,6 +67,7 @@ const Card = ({ data }) => {
               <span>{data?.availabilities_label}</span>
             </div>
             <div className="flex flex-col gap-y-2">
+              {/* one click and reveal all masked phone number, vice versa */}
               <span
                 dangerouslySetInnerHTML={{ __html: formatDescriptionText() }}
                 onClick={toggleRevealPhoneNumber}
